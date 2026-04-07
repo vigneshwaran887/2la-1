@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 id="form-title">Create Account</h2>
+        
+        <form id="auth-form">
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
 
+            <div class="input-group">
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span id="togglePassword" class="eye-icon">👁️</span>
+                </div>
+                <div id="strength-meter" class="strength-meter"></div>
+                <p id="error-msg" class="error-text"></p>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <p class="switch">Already have an account? <a href="#" id="toggle-form">Login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
