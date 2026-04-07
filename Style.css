@@ -1,0 +1,21 @@
+body { font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #eef2f3; margin: 0; }
+
+.form-container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 350px; }
+
+.input-group { margin-bottom: 15px; position: relative; }
+
+input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; outline: none; }
+
+.password-wrapper { display: flex; align-items: center; }
+.eye-icon { margin-left: -35px; cursor: pointer; font-size: 18px; z-index: 10; }
+
+/* Strength Meter Styling */
+.strength-meter { height: 5px; width: 0%; margin-top: 5px; transition: 0.3s; border-radius: 2px; }
+.weak { width: 33%; background-color: #ff4d4d; }
+.medium { width: 66%; background-color: #ffa500; }
+.strong { width: 100%; background-color: #2ecc71; }
+
+.error-text { font-size: 12px; color: #ff4d4d; margin: 5px 0 0; min-height: 15px; }
+
+.btn { width: 100%; padding: 12px; border: none; background: #007bff; color: white; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.switch { text-align: center; font-size: 14px; margin-top: 15px; }
